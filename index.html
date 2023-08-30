@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina_CSS_Joshua-v1.html</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Color de texto oscuro */
+        }
+        header, nav, main, footer {
+            padding: 40px;
+            margin: 0;
+            text-align: center; /* Centra el contenido en los bloques */
+            background-color: rgba(254, 199, 199, 0.126); /* Fondo amarillo claro */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px dotted lightgreen; /* Línea de puntos verdes */
+            padding-bottom: 3px; /* Espacio bajo la línea */
+        }
+        nav li {
+            margin: 0 40px; /* Aumenta la separación entre opciones del menú */
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0); /* Letras negras */
+            font-size: 24px; /* Aumenta el tamaño de fuente del menú */
+        }
+        nav a::before {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: lightgreen; /* Círculos verdes claros */
+            position: absolute;
+            bottom: -10px; /* Ajusta la posición del círculo */
+            left: 50%; /* Centra el círculo */
+            transform: translateX(-50%);
+        }
+        main {
+            background-image: url('piedelimon.jpg'); /* Cambia 'ruta/de/tu/imagen-pie-limon.jpg' por la ruta de tu imagen del pie de limón */
+            background-size: cover;
+            padding: 250px;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 240, 0.455); /* Fondo beige claro semitransparente */
+            padding: 40px; /* Aumenta el espacio interno */
+            font-size: 36px; /* Aumenta el tamaño de fuente */
+            line-height: 1.5; /* Ajusta el espaciado entre líneas */
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receta de Pie de Limón</h1>
+    </header>
+    <nav>
+        <ul style="border: none;">
+            <li><a href="https://www.recetasnestle.com.pe/recetas/pie-de-limon-2">Receta</a></li>
+            <li><a href="https://youtu.be/Ky4SNkQ-Ods?si=r6UlZCCWb8373so2">Video de preparación</a></li>
+            <li><a href="https://www.instagram.com/recetasnestlecam/">Instagram</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="overlay">
+            <h2>Un pie para la vida, una vida feliz</h2>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Receta de Pie de Limón</p>
+    </footer>
+</body>
+</html>
